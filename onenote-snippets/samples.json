@@ -1,0 +1,40 @@
+{
+    "values": [
+        { "done": true, "filename": "", "name": "", "group": "", "description": "" },
+        
+        { "done": true, "filename": "applicationActiveNotebook.js", "name": "Get active notebook", "group": "Application", "description": "Get the active notebook." },
+        { "done": true, "filename": "applicationActiveOutline.js", "name": "Get active outline", "group": "Application", "description": "Get the active outline." },
+        { "done": true, "filename": "applicationActivePage.js", "name": "Get active page", "group": "Application", "description": "Get the active page." },
+        { "done": true, "filename": "applicationActiveSection.js", "name": "Get active section", "group": "Application", "description": "Get the active section." },
+        { "done": true, "filename": "applicationNotebooks.js", "name": "Get notebooks", "group": "Application", "description": "Get collections of notebooks that are open." },
+
+        { "done": true, "filename": "notebookAddSection.js", "name": "Add section to notebook", "group": "Notebook", "description": "Add section to notebook." },
+        { "done": true, "filename": "notebookGetSectionGroups.js", "name": "Get notebook section groups", "group": "Notebook", "description": "Get notebook section groups." },
+        { "done": true, "filename": "notebookGetSections.js", "name": "Get notebook sections", "group": "Notebook", "description": "Get notebook sections." },
+
+        { "done": true, "filename": "outlineAppend.js", "name": "Append HTML to an outline", "group": "Outline", "description": "Append HTML to an outline." },
+        { "done": true, "filename": "outlinePrepend.js", "name": "Prepend HTML to an outline", "group": "Outline", "description": "Prepend HTML to an outline." },
+
+        { "done": true, "filename": "pageAddOutline.js", "name": "Add outline to page", "group": "Page", "description": "Add outline to page." },
+        { "done": true, "filename": "pageGetContents.js", "name": "Get page contents", "group": "Page", "description": "Get page contents." },
+        { "done": true, "filename": "pageInsertPageAsSibling.js", "name": "Add page as sibling", "group": "Page", "description": "Add page as sibling." },
+
+        { "done": true, "filename": "sectionAddPage.js", "name": "Add page to a section", "group": "Section", "description": "Add page to a section." },
+        { "done": true, "filename": "sectionInsertSectionAsSibling.js", "name": "Add a section as sibling", "group": "Section", "description": "Add a section as sibling." },
+        { "done": true, "filename": "sectionGetPages.js", "name": "Get pages in a section", "group": "Section", "description": "Get pages in a section." },
+
+        { "done": true, "filename": "sectionGroupAddSection.js", "name": "Add section to a section group", "group": "SectionGroup", "description": "Add section to a section group." },
+        { "done": true, "filename": "sectionGroupGetSections.js", "name": "Get sections in section group", "group": "SectionGroup", "description": "Get sections in section group." }
+    ],
+    "groups": [
+        
+        { "name": "Application" },
+        { "name": "Notebook" },
+        { "name": "Outline" },
+        { "name": "Page" },
+        { "name": "Section" },
+        { "name": "SectionGroup" }
+    ],
+    "suggestions": [
+    ]
+}
