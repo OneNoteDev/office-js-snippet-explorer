@@ -24,7 +24,13 @@
         { "done": true, "filename": "sectionGetPages.js", "name": "Get pages in a section", "group": "Section", "description": "Get pages in a section." },
 
         { "done": true, "filename": "sectionGroupAddSection.js", "name": "Add section to a section group", "group": "SectionGroup", "description": "Add section to a section group." },
-        { "done": true, "filename": "sectionGroupGetSections.js", "name": "Get sections in section group", "group": "SectionGroup", "description": "Get sections in section group." }
+        { "done": true, "filename": "sectionGroupGetSections.js", "name": "Get sections in section group", "group": "SectionGroup", "description": "Get sections in section group." },
+
+        { "done": true, "filename": "selectionChangedEvent.js", "name": "Get notifications on selection changes", "group": "Selection", "description": "Get notified on selection changes." },
+        { "done": true, "filename": "selectionGetMatrix.js", "name": "Get selected matrix", "group": "Selection", "description": "Get the currently selected matrix." },
+        { "done": true, "filename": "selectionGetText.js", "name": "Get selected text", "group": "Selection", "description": "Get the currently selected text." },
+        { "done": true, "filename": "selectionSetHtml.js", "name": "Insert HTML in selection", "group": "Selection", "description": "Insert HTML in selection." },
+        { "done": true, "filename": "selectionSetText.js", "name": "Insert text in selection", "group": "Selection", "description": "Insert text in selection." }
     ],
     "groups": [
         
@@ -33,7 +39,8 @@
         { "name": "Outline" },
         { "name": "Page" },
         { "name": "Section" },
-        { "name": "SectionGroup" }
+        { "name": "SectionGroup" },
+        { "name": "Selection" }
     ],
     "suggestions": [
     ]
