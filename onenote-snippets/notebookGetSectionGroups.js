@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Get the section groups in the notebook. 
-    var sectionGroups = context.application.activeNotebook.getSectionGroups();
+    var sectionGroups = context.application.activeNotebook.sectionGroups;
 
     // Queue a command to load the sectionGroups. 
     sectionGroups.load("name");
