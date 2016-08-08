@@ -1,13 +1,13 @@
 OneNote.run(function (context) {
 
     // Gets the active page.
-    var activePage = context.application.activePage;
+    var activePage = context.application.getActivePage();
 
     // Get pageContents of the activePage. 
-    var pageContents = activePage.getContents();
+    var pageContents = activePage.contents;
 
     // Queue a command to load the pageContents to access its data.
-    context.load(pageContents);
+    pageContents.load("id,type");
 
     // Run the queued commands, and return a promise to indicate task completion.
     return context.sync().then(function () {
@@ -17,7 +17,7 @@ OneNote.run(function (context) {
             outline = pageContents.items[0].outline;
 
             // Queue a command to append a paragraph to the outline.
-            outline.append("<p>new paragraph</p>");
+            outline.appendHtml("<p>new paragraph</p>");
 
             // Run the queued commands.
             return context.sync();

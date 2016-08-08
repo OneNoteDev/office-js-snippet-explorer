@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Queue a command to insert a section after the current section.
-    var section = context.application.activeSection.insertSectionAsSibling("After", "New section");
+    var section = context.application.getActiveSection().insertSectionAsSibling("After", "New section");
 
     // Queue a command to load the id and name of the new section. 
     // This example loads the new section so it can read its properties later.           

@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Gets the active page.
-    var page = context.application.activePage;
+    var page = context.application.getActivePage();
 
     // Queue a command to add an outline with given html. 
     var outline = page.addOutline(200, 200,

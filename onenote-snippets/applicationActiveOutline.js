@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Get the current outline
-    var outline = context.application.activeOutline;
+    var outline = context.application.getActiveOutline();
 
     // Queue a command to load the outline
     // For best performance, request specific properties

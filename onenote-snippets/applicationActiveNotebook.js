@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Get the current notebook.
-    var notebook = context.application.activeNotebook;
+    var notebook = context.application.getActiveNotebook();
 
     // Queue a command to load the notebook. 
     // For best performance, request specific properties.           

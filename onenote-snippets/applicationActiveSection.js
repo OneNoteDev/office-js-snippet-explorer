@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Get the current section.
-    var section = context.application.activeSection;
+    var section = context.application.getActiveSection();
 
     // Queue a command to load the section. 
     // For best performance, request specific properties.           

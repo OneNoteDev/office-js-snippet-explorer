@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Gets the active notebook.
-    var notebook = context.application.activeNotebook;
+    var notebook = context.application.getActiveNotebook();
 
     // Queue a command to add a new section. 
     var section = notebook.addSection("Sample section");

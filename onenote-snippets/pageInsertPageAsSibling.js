@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Gets the active page.
-    var activePage = context.application.activePage;
+    var activePage = context.application.getActivePage();
 
     // Queue a command to add a new page after the active page. 
     var newPage = activePage.insertPageAsSibling("After", "Next Page");

@@ -1,7 +1,7 @@
 OneNote.run(function (context) {
 
     // Queue a command to add a page to the current section.
-    var page = context.application.activeSection.addPage("Wish list");
+    var page = context.application.getActiveSection().addPage("Wish list");
 
     // Queue a command to load the id and title of the new page. 
     // This example loads the new page so it can read its properties later.           

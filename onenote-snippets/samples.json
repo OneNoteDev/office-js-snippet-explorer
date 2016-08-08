@@ -12,7 +12,6 @@
         { "done": true, "filename": "notebookGetSections.js", "name": "Get notebook sections", "group": "Notebook", "description": "Get notebook sections." },
 
         { "done": true, "filename": "outlineAppend.js", "name": "Append HTML to an outline", "group": "Outline", "description": "Append HTML to an outline." },
-        { "done": true, "filename": "outlinePrepend.js", "name": "Prepend HTML to an outline", "group": "Outline", "description": "Prepend HTML to an outline." },
 
         { "done": true, "filename": "pageAddOutline.js", "name": "Add outline to page", "group": "Page", "description": "Add outline to page." },
         { "done": true, "filename": "pageGetContents.js", "name": "Get page contents", "group": "Page", "description": "Get page contents." },
@@ -21,9 +20,6 @@
         { "done": true, "filename": "sectionAddPage.js", "name": "Add page to a section", "group": "Section", "description": "Add page to a section." },
         { "done": true, "filename": "sectionInsertSectionAsSibling.js", "name": "Add a section as sibling", "group": "Section", "description": "Add a section as sibling." },
         { "done": true, "filename": "sectionGetPages.js", "name": "Get pages in a section", "group": "Section", "description": "Get pages in a section." },
-
-        { "done": true, "filename": "sectionGroupAddSection.js", "name": "Add section to a section group", "group": "SectionGroup", "description": "Add section to a section group." },
-        { "done": true, "filename": "sectionGroupGetSections.js", "name": "Get sections in section group", "group": "SectionGroup", "description": "Get sections in section group." },
 
         { "done": true, "filename": "selectionChangedEvent.js", "name": "Get notifications on selection changes", "group": "Selection", "description": "Get notified on selection changes." },
         { "done": true, "filename": "selectionGetMatrix.js", "name": "Get selected matrix", "group": "Selection", "description": "Get the currently selected matrix." },

@@ -1,10 +1,10 @@
 OneNote.run(function (context) {
 
     // Gets the active page.
-    var activePage = context.application.activePage;
+    var activePage = context.application.getActivePage();
 
     // Queue a command to add a new page after the active page. 
-    var pageContents = activePage.getContents();
+    var pageContents = activePage.contents;
 
     // Queue a command to load the pageContents to access its data.
     context.load(pageContents);
