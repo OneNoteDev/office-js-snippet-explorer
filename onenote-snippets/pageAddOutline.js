@@ -21,12 +21,12 @@ OneNote.run(function (context) {
 "   </tr> " +
 " </table>");
     // Run the queued commands, and return a promise to indicate task completion.
-    return context.sync()
-        .catch(function (error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error)
-            {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-        })
-});
+    return context.sync();
+})
+.catch(function (error) {
+    console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error)
+    {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+})

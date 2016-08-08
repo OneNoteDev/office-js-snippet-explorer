@@ -1,22 +1,16 @@
-var ctx = new OneNote.RequestContext();
+OneNote.run(function (context) {
 
-// Run the batch of commands in the queue.
-ctx.executeAsync()
-    .then(function () {
-        //Act on objects.
-    
-        // Use this if you nest actions.
-        // Run the batch of commands in the queue.
-        return ctx.executeAsync().then(function () {
-            // Do something here.
-        });
-    })
-    // Run the batch of commands in the queue.
-    .then(ctx.executeAsync)
-    .then(function () {
-		console.log('Success');
-	})
+    // Queue up a command with the context
 
-    .catch(function (error) {
-        console.log(JSON.stringify(error));
+    // Run the queued commands, and return a promise to indicate task completion.
+    return context.sync().then(function () {
+        // Do something with the returned variables
     });
+})
+.catch(function (error) {
+    console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error)
+    {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+});

@@ -10,30 +10,29 @@ OneNote.run(function (context) {
     context.load(pageContents);
 
     // Run the queued commands, and return a promise to indicate task completion.
-    return context.sync()
-        .then(function () {
-            for (var i = 0; i < pageContents.items.length; i++)
+    return context.sync().then(function () {
+        for (var i = 0; i < pageContents.items.length; i++)
+        {
+            var pageContent = pageContents.items[i];
+            if (pageContent.type == "Outline")
             {
-                var pageContent = pageContents.items[i];
-                if (pageContent.type == "Outline")
-                {
-                    console.log("Found an outline");
-                }
-                else if (pageContent.type == "Image")
-                {
-                    console.log("Found an image");
-                }
-                else if (pageContent.type == "Other")
-                {
-                    console.log("Found a type not supported yet.");
-                }
+                console.log("Found an outline");
             }
-        })
-        .catch(function (error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error)
+            else if (pageContent.type == "Image")
             {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
+                console.log("Found an image");
             }
-        });
+            else if (pageContent.type == "Other")
+            {
+                console.log("Found a type not supported yet.");
+            }
+        }
+    })
+    .catch(function (error) {
+        console.log("Error: " + error);
+        if (error instanceof OfficeExtension.Error)
+        {
+            console.log("Debug info: " + JSON.stringify(error.debugInfo));
+        }
+    });
 });

@@ -6,7 +6,6 @@
         { "done": true, "filename": "applicationActiveOutline.js", "name": "Get active outline", "group": "Application", "description": "Get the active outline." },
         { "done": true, "filename": "applicationActivePage.js", "name": "Get active page", "group": "Application", "description": "Get the active page." },
         { "done": true, "filename": "applicationActiveSection.js", "name": "Get active section", "group": "Application", "description": "Get the active section." },
-        { "done": true, "filename": "applicationNotebooks.js", "name": "Get notebooks", "group": "Application", "description": "Get collections of notebooks that are open." },
 
         { "done": true, "filename": "notebookAddSection.js", "name": "Add section to notebook", "group": "Notebook", "description": "Add section to notebook." },
         { "done": true, "filename": "notebookGetSectionGroups.js", "name": "Get notebook section groups", "group": "Notebook", "description": "Get notebook section groups." },

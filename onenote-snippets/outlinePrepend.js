@@ -10,25 +10,24 @@ OneNote.run(function (context) {
     context.load(pageContents);
 
     // Run the queued commands, and return a promise to indicate task completion.
-    return context.sync()
-        .then(function () {
-            if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
-            {
-                // First item is an outline.
-                outline = pageContents.items[0].outline;
+    return context.sync().then(function () {
+        if (pageContents.items.length != 0 && pageContents.items[0].type == "Outline")
+        {
+            // First item is an outline.
+            outline = pageContents.items[0].outline;
 
-                // Queue a command to prepend a paragraph to the outline.
-                outline.prepend("<p>new paragraph</p>");
+            // Queue a command to prepend a paragraph to the outline.
+            outline.prepend("<p>new paragraph</p>");
 
-                // Run the queued commands.
-                return context.sync();
-            }
-        })
-        .catch(function (error) {
-            console.log("Error: " + error);
-            if (error instanceof OfficeExtension.Error)
-            {
-                console.log("Debug info: " + JSON.stringify(error.debugInfo));
-            }
-        });
+            // Run the queued commands.
+            return context.sync();
+        }
+    })
+})
+.catch(function (error) {
+    console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error)
+    {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
 });

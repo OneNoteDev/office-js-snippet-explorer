@@ -16,21 +16,20 @@ OneNote.run(function (context) {
     context.load(allChildSections);
 
     // Run the queued commands, and return a promise to indicate task completion.
-    return context.sync()
-        .then(function () {
-            $.each(childSections.items, function (index, childSection) {
-                console.log("Immediate child section name: " + childSection.name);
-            });
-
-            $.each(allChildSections.items, function (index, childSection) {
-                console.log("Child section name: " + childSection.name);
-            });
+    return context.sync().then(function () {
+        $.each(childSections.items, function (index, childSection) {
+            console.log("Immediate child section name: " + childSection.name);
         });
-})
-    .catch(function (error) {
-        console.log("Error: " + error);
-        if (error instanceof OfficeExtension.Error)
-        {
-            console.log("Debug info: " + JSON.stringify(error.debugInfo));
-        }
+
+        $.each(allChildSections.items, function (index, childSection) {
+            console.log("Child section name: " + childSection.name);
+        });
     });
+})
+.catch(function (error) {
+    console.log("Error: " + error);
+    if (error instanceof OfficeExtension.Error)
+    {
+        console.log("Debug info: " + JSON.stringify(error.debugInfo));
+    }
+});
